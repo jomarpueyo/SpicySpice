@@ -1,5 +1,6 @@
 # Project: SpicySpice 
-Senior Design Project: Sou-Spice 
+Senior Design Project: Sou-Spice
+
 Project is native [AndroidSDK](https://developer.android.com/studio/index.html)
 
 ## Main Objective
