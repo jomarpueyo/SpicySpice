@@ -8,7 +8,7 @@ Remote communication via Bluetooth for dispensing
 *	Dispensing function 
 *	Bluetooth discovery/verification/communication 
 *	Communicate with microcontroller 
-*	Basic AndroidSDK knowledge
+*	AndroidSDK knowledge
 
 ## Side Objectives
 Allow users to share recipes online 
@@ -19,12 +19,8 @@ Allow users to share recipes online
 
 Artisticly design the app  
 *	Photoshop: Logos/Icons 
-*	The beauty of color schemes 
+*	Proper use of color schemes 
 *	Easy to the eye 
-*	Allow creativity to flow again
-
-## Self Goals
-*	Complete this project with 100% satisfaction in this application
 
 ## Author
 **Jomar Pueyo** - [thatjomarguy](https://github.com/thatjomarguy)
