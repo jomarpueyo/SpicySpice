@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background">
+    tools:context="suospice.suo.spice.com.spicyspice.MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/dispenseImageButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="156dp"
+            android:onClick="onClick"
+            app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+        <ImageButton
+            android:id="@+id/settingsImageButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/searchImageButton"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:onClick="onClick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_manage"
+            tools:layout_editor_absoluteY="439dp" />
+
+        <ImageButton
+            android:id="@+id/searchImageButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/uploadImageButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClick"
+            app:srcCompat="@android:drawable/ic_menu_search"
+            tools:layout_editor_absoluteX="264dp"
+            tools:layout_editor_absoluteY="439dp" />
+
+        <ImageButton
+            android:id="@+id/uploadImageButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="116dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:onClick="onClick"
+            app:srcCompat="@android:drawable/ic_menu_upload"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="439dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dispenseImageButton"
+            android:layout_centerHorizontal="true"
+            android:text="Dispense"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4"
+            android:text="Upload Recipe"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchImageButton"
+            android:layout_centerHorizontal="true"
+            android:text="Search Recipe"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/settingsImageButton"
+            android:layout_alignRight="@+id/settingsImageButton"
+            android:layout_below="@+id/settingsImageButton"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="Settings"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="TEST MAIN MENU LAYOUT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" >
+
+    </android.support.design.widget.BottomNavigationView>
+
+</android.support.constraint.ConstraintLayout>

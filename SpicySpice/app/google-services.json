@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "188149107723",
+    "firebase_url": "https://glassy-ripsaw-181917.firebaseio.com",
+    "project_id": "glassy-ripsaw-181917",
+    "storage_bucket": "glassy-ripsaw-181917.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188149107723:android:0abd53e9a7db0e44",
+        "android_client_info": {
+          "package_name": "com.spice.suo.suospice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188149107723-k3k25p7i74l0arvh01pid0c8hoktifq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spice.suo.suospice",
+            "certificate_hash": "8b3419863e7c6936b7b4c8a6b6bf27efa57f94fe"
+          }
+        },
+        {
+          "client_id": "188149107723-td4f5ruq9ar2u4nkak8687nd40gc59r8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQkEVwo8N1Y6I8hwg0BfxK2n7SKliLcS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188149107723-td4f5ruq9ar2u4nkak8687nd40gc59r8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
