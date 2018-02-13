@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="suospice.suo.spice.com.spicyspice.MainActivity"
+    android:background="@drawable/custom_background">
+
+    <ImageView
+        android:id="@+id/logoIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@android:drawable/star_on" />
+
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/checkBox"
+        android:layout_alignLeft="@+id/editEmail"
+        android:layout_alignStart="@+id/editEmail"
+        android:layout_marginBottom="16dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/buttonSignIn"
+        android:layout_alignEnd="@+id/editPassword"
+        android:layout_alignRight="@+id/editPassword"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Remember me"
+        android:textSize="12dp" />
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Sign in" />
+
+
+    <TextView
+        android:id="@+id/textSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:text="Register here" />
+
+
+</RelativeLayout>
