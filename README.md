@@ -9,6 +9,7 @@ Remote communication via Bluetooth for dispensing
 *	Bluetooth discovery/verification/communication
 *	Use Backend: Google Firebase 
 *	Communicate with microcontroller 
+
 Allow users to share recipes online 
 *	Verify and Authenticate users 
 *	Store/upload images/data 
