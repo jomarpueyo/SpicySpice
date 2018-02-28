@@ -3,7 +3,7 @@ Senior Design Project: Sou-Spice
 
 Project is native [AndroidSDK](https://developer.android.com/studio/index.html)
 
-## Main Objective
+## Objectives
 Remote communication via Bluetooth for dispensing 
 *	Dispensing function 
 *	Bluetooth discovery/verification/communication
