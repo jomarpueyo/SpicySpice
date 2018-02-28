@@ -6,13 +6,10 @@ Project is native [AndroidSDK](https://developer.android.com/studio/index.html)
 ## Main Objective
 Remote communication via Bluetooth for dispensing 
 *	Dispensing function 
-*	Bluetooth discovery/verification/communication 
+*	Bluetooth discovery/verification/communication
+*	Use Backend: Google Firebase 
 *	Communicate with microcontroller 
-*	AndroidSDK knowledge
-
-## Side Objectives
 Allow users to share recipes online 
-*	Using Backend: Google Firebase 
 *	Verify and Authenticate users 
 *	Store/upload images/data 
 *	Create and search recipes of your own
