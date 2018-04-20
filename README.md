@@ -1,4 +1,4 @@
-# Project: SpicySpice (In Progress)
+# Project: SpicySpice
 Senior Design Project: Sou-Spice
 
 Project is native [AndroidSDK](https://developer.android.com/studio/index.html)
