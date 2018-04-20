@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 progressDialog.hide();
-                                Toast.makeText(MainActivity.this, "TEST: AUTO LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show();
+                                // Toast.makeText(MainActivity.this, "TEST: AUTO LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show();
                                 // >> Move Activities
                                 Intent myIntent = new Intent(MainActivity.this, MenuActivity.class);
                                 startActivity(myIntent);
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                         .edit()
                                         .clear()
                                         .apply();
-                                Toast.makeText(MainActivity.this, "TEST: DELETED PREFS FILE", Toast.LENGTH_SHORT).show();
+                                // Toast.makeText(MainActivity.this, "TEST: DELETED PREFS FILE", Toast.LENGTH_SHORT).show();
                             }
 
                         }
@@ -129,8 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             }
                             // >> Move Activities
-                            Intent myIntent = new Intent(MainActivity.this, MenuActivity.class);
-                            startActivity(myIntent);
+                            startActivity(new Intent(MainActivity.this, MenuActivity.class));
                         }
                         else{
                             //Failed Login
