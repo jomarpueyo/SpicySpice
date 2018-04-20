@@ -22,4 +22,5 @@ Artisticly design the app
 
 ## Author
 **Jomar Pueyo** - [thatjomarguy](https://github.com/thatjomarguy)
-* Email jomarpueyo@gmail.com
+
+Email jomarpueyo@gmail.com
