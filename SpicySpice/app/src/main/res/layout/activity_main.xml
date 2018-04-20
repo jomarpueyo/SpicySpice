@@ -6,16 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="suospice.suo.spice.com.spicyspice.MainActivity"
-    android:background="@drawable/custom_background">
+    android:background="@mipmap/login_bg">
 
-    <ImageView
-        android:id="@+id/logoIcon"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        app:srcCompat="@android:drawable/star_on" />
+    <!--<ImageView-->
+        <!--android:id="@+id/logoIcon"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--app:srcCompat="@drawable/Speiis" />-->
 
 
     <EditText
@@ -25,10 +25,12 @@
         android:layout_above="@+id/editPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:background="#11000000"
+        android:background="#33000000"
+        android:textColor="#000000"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        />
 
 
     <EditText
@@ -39,7 +41,8 @@
         android:layout_alignLeft="@+id/editEmail"
         android:layout_alignStart="@+id/editEmail"
         android:layout_marginBottom="16dp"
-        android:background="#11000000"
+        android:background="#33000000"
+        android:textColor="#000000"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword" />
@@ -78,7 +81,8 @@
         android:layout_marginBottom="28dp"
         android:clickable="true"
         android:focusable="false"
-        android:text="Register here" />
+        android:text="Register here"
+        android:textColor="#000000"/>
 
 
 </RelativeLayout>

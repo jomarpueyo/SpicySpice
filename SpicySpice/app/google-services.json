@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "188149107723-thik52c1apscaij1tedqv00erooddi87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spice.suo.suospice",
+            "certificate_hash": "ddd70172dbc107ec7fbce2379f90bea8fcce0bdf"
+          }
+        },
+        {
           "client_id": "188149107723-k3k25p7i74l0arvh01pid0c8hoktifq4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

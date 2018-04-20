@@ -1,13 +1,80 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".settingsFragment">
+    tools:context=".settingsFragment"
+    android:background="@mipmap/generic_bg">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:text="Connect to Suos-Spice" />
 
-</FrameLayout>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text="Bluetooth Enabled"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/dispense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:text="Dispense"/>
+
+    <NumberPicker
+        android:id="@+id/numberPicker4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/numberPicker"
+        android:layout_marginRight="25dp"></NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/numberPicker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/numberPicker4"
+        android:layout_marginEnd="117dp"></NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/numberPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_alignTop="@+id/numberPicker4"></NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="198dp"
+        android:layout_marginLeft="25dp"></NumberPicker>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_marginBottom="149dp"
+        android:entries="@array/units"
+        android:textColor="#000000">
+
+    </android.support.v7.widget.AppCompatSpinner>
+
+</RelativeLayout>

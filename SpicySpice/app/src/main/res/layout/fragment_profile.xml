@@ -2,17 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profileFragment">
+    tools:context=".profileFragment"
+    android:background="@mipmap/generic_bg">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_marginTop="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
-        android:textSize="18dp"
+        android:textSize="24dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Profile" />
+        android:text="Account Details"
+        android:textColor="#000000"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,28 +24,65 @@
             android:id="@+id/emailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16dp"
             android:layout_marginLeft="32dp"
             android:layout_marginStart="34dp"
             android:layout_marginTop="94dp"
-            android:text="Email: " />
+            android:text="Email: "
+            android:textColor="#000000"/>
 
-        <TextView
-            android:id="@+id/displayName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/emailText"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="28dp"
-            android:text="Display Name: " />
+        <!--<TextView-->
+            <!--android:id="@+id/displayName"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/emailText"-->
+            <!--android:layout_marginLeft="32dp"-->
+            <!--android:layout_marginTop="28dp"-->
+            <!--android:text="Display Name: " />-->
 
         <TextView
             android:id="@+id/verifiedBool"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/displayName"
+            android:layout_below="@+id/emailText"
+            android:textSize="16dp"
             android:layout_marginLeft="32dp"
-            android:layout_marginTop="28dp"
-            android:text="Verified: " />
+            android:layout_marginTop="15dp"
+            android:text="Verified: "
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/thanksGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:text="Sous-Spice backend supported by Google Firebase"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:text="About"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/details"
+            android:textSize="16dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:text="     Sous-Spice helps create an efficient solution to storage/dispersal of cooking spices by organizing them in their respective containers as well as dispensing spices accurate to the user input. This application aims to assist the device with remote dispensing that features recipe sharing among firebase users." />
+
     </RelativeLayout>
 
 </FrameLayout>

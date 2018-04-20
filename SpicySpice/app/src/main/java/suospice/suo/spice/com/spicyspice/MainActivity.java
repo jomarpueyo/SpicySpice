@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String PREF_EMAIL = "email";
     private static final String PREF_PASSWORD = "password";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +50,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextEmail = (EditText) findViewById(R.id.editEmail);
         editTextPassword = (EditText) findViewById(R.id.editPassword);
         textViewSignUp = (TextView) findViewById(R.id.textSignUp);
-
         checkBox = (CheckBox) findViewById(R.id.checkBox);
 
         buttonSignIn.setOnClickListener(this);
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 // Toast.makeText(MainActivity.this, "TEST: AUTO LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show();
                                 // >> Move Activities
                                 Intent myIntent = new Intent(MainActivity.this, MenuActivity.class);
+                                FirebaseUser user = firebaseAuth.getCurrentUser();
                                 startActivity(myIntent);
                             }
                             else{
@@ -90,6 +92,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         progressDialog.hide();
         //Normal Activity
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
     }
 
     private void signInUser(){
@@ -110,14 +119,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressDialog.setMessage("Verifying credentials...");
         progressDialog.show();
 
-        firebaseAuth.signInWithEmailAndPassword(email,password)
+        firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            //Sucessful Login
+                        if (task.isSuccessful()) {
+                            //Successful Login
                             progressDialog.hide();
-                            Toast.makeText(MainActivity.this, "Login Sucessful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
 
                             if (checkBox.isChecked()){
                                 //Remember Me section
@@ -160,20 +169,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressDialog.setMessage("Registering User...");
         progressDialog.show();
 
-        firebaseAuth.createUserWithEmailAndPassword(email,password)
+        firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()) {
+                        if (task.isSuccessful()) {
                             //user is successfully registered and logged in
                             //we will start profile activity
                             progressDialog.hide();
-                            Toast.makeText(MainActivity.this, "Registered sucessfully", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_LONG).show();
                         }
                         else{
                             //user has failed to register
                             progressDialog.hide();
-                            Toast.makeText(MainActivity.this, "User registration failed", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "Registration Failed", Toast.LENGTH_LONG).show();
                         }
                     }
                 });
